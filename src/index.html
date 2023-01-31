@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terkup</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>              <!-- F1 + Emmet:wrap with abbre...  div.-->
+    <div class="container bg-info p-3 mt-5 rounded border border-2">        <!-- bg-info (háttérszín), p-3 (padding, belső margó), mt-5 (margin) -->
+        <h1>Feladat 0301</h1>
+        <p>
+            Egy kör alapú kúp térfogatának számítása,
+            a sugár és a magasság alapján.
+        </p>                                             <!-- rounded (lekerekítés), border (keret) + mérete -->
+        <div class="kupform">
+            
+            <div class="mt-3">              <!-- ALT+SHIFT+le billentyű, kijelölt rész másolása-->
+                <input type="text"
+                placeholder="sugár"         
+                class="form-control"
+                id="radius">               <!-- placeholder: előre kitöltött, felülírható szöveg -->
+            </div>
+            
+            <div class="mt-3">
+                <input type="text"
+                placeholder="magasság"
+                class="form-control"
+                id="height">
+            </div>
+            
+            <button class="btn btn-primary mt-3" id="calcButton">Számít</button>            <!-- számít gomb -->
+            
+            <div class="mt-3">
+                <label for="area" class="form-label">Térfogat</label>       <!-- readonly, felhasználó által nem szerkeszthető. -->
+                <input type="text"                                                  
+                readonly                    
+                class="form-control"
+                id="area">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about" class="mt-3 text-center ab">
+        Grünhut Gábor, 2023-01-31
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
